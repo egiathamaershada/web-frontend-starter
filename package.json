@@ -1,7 +1,7 @@
 {
   "name": "web-frontend-starter",
   "version": "0.1.0",
-  "description": "Opinionated website frontend starter using Webpack, PostCSS, Babel, and Cypress",
+  "description": "Opinionated website frontend starter using Webpack, PostCSS, and Babel",
   "author": "Egia Thama Ershada",
   "license": "BSD-2-Clause",
   "scripts": {
