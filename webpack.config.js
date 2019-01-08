@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
-
+const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 const entryBase = function () {
@@ -44,7 +44,6 @@ module.exports = [{
   },
   devServer: {
     contentBase: './dist',
-    hot: true
   },
   module: moduleBase(true),
   plugins: [
@@ -53,9 +52,11 @@ module.exports = [{
       filename: '[name].css'
     }),
     new HtmlWebpackPlugin({
+      alwaysWriteToDisk: true,
       template: './src/html/index.html'
     }),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackHarddiskPlugin()
   ]
 }, {
   name: 'production',
