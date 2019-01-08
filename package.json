@@ -6,7 +6,7 @@
   "license": "BSD-2-Clause",
   "scripts": {
     "build": "./node_modules/.bin/webpack --config-name production",
-    "test": "echo \"no test provided, please add your test workflow\" && exit",
+    "test": "./node_modules/.bin/cypress open",
     "serve": "./node_modules/.bin/webpack-dev-server --config-name development"
   },
   "devDependencies": {
@@ -16,6 +16,7 @@
     "clean-webpack-plugin": "^1.0.0",
     "css-loader": "^2.1.0",
     "cssnano": "^4.1.8",
+    "cypress": "^3.1.4",
     "html-webpack-harddisk-plugin": "^1.0.1",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.5.0",
