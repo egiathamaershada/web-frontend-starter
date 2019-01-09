@@ -33,7 +33,7 @@ or if you are using yarn
 yarn serve
 ~~~
 ## Last
-but not least, always read the documentation for all plugins and tools. And you can always add any plugins or any tools and configure it to suit your need. Something you wanted to see maybe __babel.config.js__ and __postcss.config.js__ to add presets, plugins and browser targets and image compression presets at __webpack.config.js__.
+but not least, always read the documentation for all plugins and tools. And you can always add any plugins or any tools and configure it to suit your need. Things you may want to look are [__babel.config.js__](https://github.com/egiathamaershada/web-frontend-starter/blob/master/babel.config.js) and [__postcss.config.js__](https://github.com/egiathamaershada/web-frontend-starter/blob/master/postcss.config.js) to add presets, plugins and browser targets and webpack configurations at [__webpack.config.js__](https://github.com/egiathamaershada/web-frontend-starter/blob/master/webpack.config.js).
 
 # Documentation
 ## Folder Structure
@@ -48,8 +48,8 @@ By default, there are 3 scripts, __serve__, __build__, __test__.
 
 - __serve__ is for development use. It will launch webpack-dev-server for the project. You will have to visit the page in your browser (you can change this behaviour in __webpack.config.js__)
 - __build__ is for production use. It will run webpack using production configuration.
-- __test__ is for testing. By default, this project has no test implemented. I left the test open to be implemented by any testing framework you use. __There is a branch with test available using [cypress]("https://cypress.io")__
+- __test__ is for testing. By default, this project has no test implemented. I left the test open to be implemented by any testing framework you use. __There is a branch with test available using [cypress](https://cypress.io)__
 
 # License
 
-[BSD 2 Clause]()
+[BSD 2 Clause](https://github.com/egiathamaershada/web-frontend-starter/blob/master/LICENSE.md)
