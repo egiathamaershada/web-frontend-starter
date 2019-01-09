@@ -29,6 +29,24 @@ const moduleBase = function (devMode) {
           { loader: 'css-loader', options: { importLoaders: 1 } },
           'postcss-loader'
         ]
+      },
+      {
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        exclude: /(node_modules|bower_components)/,
+        use: [
+          'file-loader',
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              mozjpeg: {
+                quality: 70
+              },
+              pngquant: {
+                enabled: false,
+              }
+            }
+          },
+        ],
       }
     ]
   }
